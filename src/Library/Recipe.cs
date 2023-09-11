@@ -34,6 +34,11 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
         }
+        /*
+        SRP sugiere que una clase debe tener una única razón para cambiar, es decir, 
+        debe tener una única responsabilidad. En este caso la responsabilidad asignada es 
+        la de calcular el costo total.
+        */
         public double GetProductionCost()
         {
             double insumosCost = 0;
